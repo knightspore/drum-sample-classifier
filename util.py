@@ -127,7 +127,7 @@ class SoundDS(Dataset):
 
 # Single File Prediction Function
 
-def predict(model, path, classID):
+def predict(model, path, classID, device):
     model.eval()
     
     # Prepare Prompt as Faked Dataset
