@@ -64,6 +64,7 @@ class AudioClassifier (nn.Module):
 
         # Linear Layer
         x = self.lin(x)
+        # x = nn.Sigmoid()(x) # Added for Compatibility with Generator
 
         # Final output
         return x
